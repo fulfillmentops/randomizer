@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Team Randomizer</h1>
+            <p class="subtitle" id="modeSubtitle">Ready to select!</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Back Button -->
+            <div class="back-section">
+                <button id="backBtn" class="btn btn-secondary">← Back to Setup</button>
+            </div>
+
+            <!-- Animation Area -->
+            <div class="animation-area" id="animationArea"></div>
+
+            <!-- Action Button -->
+            <div class="action-section">
+                <button id="selectBtn" class="btn btn-large btn-select">Start Randomizer!</button>
+            </div>
+
+            <!-- Result Display -->
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="result-card">
+                    <h2>Selected:</h2>
+                    <div class="result-content">
+                        <img id="resultImage" src="" alt="Selected participant" />
+                        <h3 id="resultName"></h3>
+                    </div>
+                    <button id="resetBtn" class="btn btn-secondary">Select Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="randomizer.js"></script>
+</body>
+</html>
+

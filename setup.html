@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Randomizer - Setup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Team Randomizer</h1>
+            <p class="subtitle">Choose your selection mode</p>
+        </header>
+
+        <div class="main-content">
+            <div class="setup-section">
+                <h2>Selection Mode</h2>
+                <p class="setup-description">Choose how you want to select a participant:</p>
+                
+                <div class="mode-cards">
+                    <div class="mode-card" data-mode="random">
+                        <div class="mode-icon">🎲</div>
+                        <h3>Random Selection</h3>
+                        <p>Completely random selection from all participants</p>
+                        <div class="radio-indicator"></div>
+                    </div>
+                    
+                    <div class="mode-card" data-mode="rigged">
+                        <div class="mode-icon">🎯</div>
+                        <h3>Preset Selection</h3>
+                        <p>Appears random but selects a predetermined participant</p>
+                        <div class="radio-indicator"></div>
+                    </div>
+                </div>
+
+                <div id="riggedSetup" class="rigged-setup" style="display: none;">
+                    <label for="preselectedChoice">Choose who will be selected:</label>
+                    <select id="preselectedChoice">
+                        <option value="">Select a participant...</option>
+                    </select>
+                </div>
+
+                <div class="setup-action">
+                    <button id="continueBtn" class="btn btn-large btn-select" disabled>Continue to Randomizer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="setup.js"></script>
+</body>
+</html>
+
